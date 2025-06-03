@@ -1,4 +1,2 @@
-# risk-mgmt-v2
-# risk-mgmt-v2
-# risk-mgmt-v2
-# risk-mgmt-v2
+server url:
+http://44.202.34.172:8000/docs
