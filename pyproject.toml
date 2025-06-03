@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "ai-reporter"
+version = "0.1.0"
+description = ""
+authors = ["kassraniroumand <kassra.niroumand@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110"
+uvicorn = { extras = ["standard"], version = "^0.29" }
+gunicorn = "23.0.0"
+python-multipart = "^0.0.20"
+boto3 = ">=1.37.2,<1.37.4"
+aioboto3 = "^14.3.0"
+pydantic = "^2.11.5"
+langchain-core = "^0.3.63"
+langchain-community = "^0.3.24"
+langchain-groq = "^0.3.2"
+langchain-openai = "^0.3.18"
+langgraph = "^0.4.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

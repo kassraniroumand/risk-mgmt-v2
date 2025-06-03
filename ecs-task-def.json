@@ -1,0 +1,25 @@
+{
+  "family": "fastapi-task",
+  "cpu": "256",
+  "memory": "512",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "runtimePlatform": {
+    "cpuArchitecture": "ARM64",
+    "operatingSystemFamily": "LINUX"
+  },
+  "executionRoleArn": "arn:aws:iam::762233768894:role/administratorAccess",
+  "containerDefinitions": [
+    {
+      "name": "fastapi",
+      "image": "REPLACE_IMAGE_URI",
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true
+    }
+  ]
+}
